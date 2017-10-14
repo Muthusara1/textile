@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/supervisorlist"
+    tools:context="com.kct.prototype.SAddItems">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/saddlist"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateandtime">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/datelabel"
+                android:text="Date        :"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:id="@+id/date"
+                android:layout_toRightOf="@+id/datelabel"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/timelabel"
+                android:text="Time       :"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/datelabel"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:id="@+id/time"
+                android:layout_below="@+id/datelabel"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/timelabel"
+                android:layout_marginLeft="20dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/emplabel"
+                android:text="EmpId     :"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/timelabel"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                />
+
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:inputType="number"
+                android:singleLine="true"
+                android:textSize="10dp"
+                android:id="@+id/empid"
+                android:layout_below="@+id/timelabel"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/emplabel"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/entrynolabel"
+                android:layout_below="@+id/emplabel"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:text="Entry No :"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/entrynolabel"
+                android:id="@+id/entryno"
+                android:layout_below="@+id/emplabel"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/adddetails"
+            android:layout_below="@+id/dateandtime"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/countlabel"
+                android:layout_toRightOf="@+id/qualitylabel1"
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/black"
+                android:text="Count"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pricelabel"
+                android:layout_toRightOf="@+id/countlabel"
+                android:layout_marginLeft="50dp"
+                android:textColor="@color/black"
+                android:text="Price"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quality1:"
+                android:layout_below="@+id/countlabel"
+                android:layout_marginTop="20dp"
+                android:id="@+id/qualitylabel1"
+                android:textColor="@color/black"
+                />
+            <EditText
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:id="@+id/count1"
+                android:singleLine="true"
+                android:inputType="number"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/edittextback"
+                android:textColor="@color/black"
+                android:layout_below="@+id/countlabel"
+                android:layout_toRightOf="@+id/qualitylabel1" />
+
+            <EditText
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:editable="false"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/price1"
+                android:background="@drawable/edittextback"
+                android:textColor="@color/black"
+                android:layout_below="@+id/countlabel"
+                android:layout_toRightOf="@+id/countlabel" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quality2:"
+                android:layout_below="@+id/qualitylabel1"
+                android:layout_marginTop="20dp"
+                android:id="@+id/qualitylabel2"
+                android:textColor="@color/black"
+                />
+            <EditText
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:id="@+id/count2"
+                android:singleLine="true"
+                android:inputType="number"
+                android:layout_marginLeft="40dp"
+                android:layout_below="@+id/qualitylabel1"
+                android:background="@drawable/edittextback"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/qualitylabel1" />
+
+            <EditText
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/price2"
+                android:editable="false"
+                android:layout_below="@+id/qualitylabel1"
+                android:background="@drawable/edittextback"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/countlabel" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quality3:"
+                android:layout_below="@+id/qualitylabel2"
+                android:layout_marginTop="20dp"
+                android:id="@+id/qualitylabel3"
+                android:textColor="@color/black"
+                />
+            <EditText
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:inputType="number"
+                android:id="@+id/count3"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/edittextback"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:layout_below="@+id/qualitylabel2"
+                android:layout_toRightOf="@+id/qualitylabel1" />
+
+            <EditText
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/price3"
+                android:editable="false"
+                android:layout_below="@+id/qualitylabel2"
+                android:background="@drawable/edittextback"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/countlabel" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quality4:"
+                android:layout_below="@+id/qualitylabel3"
+                android:layout_marginTop="20dp"
+                android:id="@+id/qualitylabel4"
+                android:textColor="@color/black"
+                />
+            <EditText
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:id="@+id/count4"
+                android:singleLine="true"
+                android:inputType="number"
+                android:layout_marginLeft="40dp"
+                android:layout_below="@+id/qualitylabel3"
+                android:background="@drawable/edittextback"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/qualitylabel1" />
+
+            <EditText
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/price4"
+
+                android:editable="false"
+                android:layout_below="@+id/qualitylabel3"
+                android:background="@drawable/edittextback"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/countlabel" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/counttotlabel"
+                android:layout_below="@+id/qualitylabel4"
+                android:layout_toRightOf="@+id/qualitylabel1"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pricetotlabel"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/qualitylabel4"
+                android:layout_toRightOf="@+id/countlabel"
+                android:layout_marginLeft="60dp"
+                android:textColor="@color/black"
+                android:text=""
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/save"
+                android:layout_below="@+id/pricetotlabel"
+                android:layout_marginTop="20dp"
+                android:text="Save"
+                android:layout_toRightOf="@+id/qualitylabel1"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/clear"
+                android:layout_below="@+id/pricetotlabel"
+                android:layout_marginTop="20dp"
+                android:text="Clear"
+                android:layout_toRightOf="@+id/countlabel"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
